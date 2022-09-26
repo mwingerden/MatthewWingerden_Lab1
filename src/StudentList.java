@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class StudentList {
-    List<Student> listStudent;
+    private final List<Student> listStudent;
 
     public StudentList(String file) {
         this.listStudent = new ArrayList<>();
@@ -37,9 +37,13 @@ public class StudentList {
     public String toString() {
         StringBuilder output = new StringBuilder();
         for (Student student: listStudent) {
-            output.append(student.toString() + "\n");
+            output.append(student.toString()).append("\n");
         }
 
         return output.toString();
+    }
+
+    public List<Student> getListStudent() {
+        return listStudent;
     }
 }
