@@ -11,7 +11,7 @@ public class schoolsearch {
 
         do {
             Scanner scan = new Scanner(System.in);
-            System.out.println("Enter Search Query: ");
+            System.out.println("Enter Search Query (enter nothing to see options): ");
             input = scan.nextLine();
 
             inputList = new ArrayList<>(Arrays.asList(input.split(" ")));
@@ -20,52 +20,55 @@ public class schoolsearch {
                 System.out.println("""
                         Please print either of the following search queries:\s
                         •S[tudent]: <lastname> [B[us]]
-                        •T[eacher] <lastname>
-                        •B[us] <number>
-                        •G[rade] <number> [H[igh]|L[ow]]
-                        •A[verage] <number>
+                        •T[eacher]: <lastname>
+                        •B[us]: <number>
+                        •G[rade]: <number> [H[igh]|L[ow]]
+                        •A[verage]: <number>
                         •I[nfo]
                         •Q[uit]
                         """);
             }
-            else if(inputList.get(0).equalsIgnoreCase("s") ||
-                    inputList.get(0).equalsIgnoreCase("student")) {
+            else if(inputList.get(0).equalsIgnoreCase("s:") ||
+                    inputList.get(0).equalsIgnoreCase("student:")) {
                 if(inputList.size() >= 2 && inputList.size() <= 3) {
                     SearchMethods.searchStudent(list.getListStudent(), inputList.get(1),
-                            inputList.size() == 3 && inputList.get(2).equalsIgnoreCase("b"));
+                            inputList.size() == 3 && (inputList.get(2).equalsIgnoreCase("b")
+                                    || inputList.get(2).equalsIgnoreCase("bus")));
                 }
             }
-            else if(inputList.get(0).equalsIgnoreCase("t") ||
-                    inputList.get(0).equalsIgnoreCase("teacher")) {
+            else if(inputList.get(0).equalsIgnoreCase("t:") ||
+                    inputList.get(0).equalsIgnoreCase("teacher:")) {
                 if(inputList.size() == 2) {
                     SearchMethods.searchTeacher(list.getListStudent(), inputList.get(1));
                 }
 
             }
-            else if(inputList.get(0).equalsIgnoreCase("g") ||
-                    inputList.get(0).equalsIgnoreCase("grade")) {
+            else if(inputList.get(0).equalsIgnoreCase("g:") ||
+                    inputList.get(0).equalsIgnoreCase("grade:")) {
                 if(inputList.size() == 2) {
                     SearchMethods.searchGrade(list.getListStudent(), Integer.parseInt(inputList.get(1)));
                 }
                 else if(inputList.size() == 3) {
                     if(inputList.get(2).equalsIgnoreCase("h")
                             || inputList.get(2).equalsIgnoreCase("high")) {
-                        SearchMethods.searchGrade(list.getListStudent(), true);
+                        SearchMethods.searchGrade(list.getListStudent(),
+                                Integer.parseInt(inputList.get(1)), true);
                     }
                     else if(inputList.get(2).equalsIgnoreCase("l")
                             || inputList.get(2).equalsIgnoreCase("low")) {
-                        SearchMethods.searchGrade(list.getListStudent(), false);
+                        SearchMethods.searchGrade(list.getListStudent(),
+                                Integer.parseInt(inputList.get(1)), false);
                     }
                 }
             }
-            else if(inputList.get(0).equalsIgnoreCase("b") ||
-                    inputList.get(0).equalsIgnoreCase("bus")) {
+            else if(inputList.get(0).equalsIgnoreCase("b:") ||
+                    inputList.get(0).equalsIgnoreCase("bus:")) {
                 if(inputList.size() == 2) {
                     SearchMethods.searchBus(list.getListStudent(), Integer.parseInt(inputList.get(1)));
                 }
             }
-            else if(inputList.get(0).equalsIgnoreCase("a") ||
-                    inputList.get(0).equalsIgnoreCase("average")) {
+            else if(inputList.get(0).equalsIgnoreCase("a:") ||
+                    inputList.get(0).equalsIgnoreCase("average:")) {
                 if(inputList.size() == 2) {
                     SearchMethods.searchAverage(list.getListStudent(), Integer.parseInt(inputList.get(1)));
                 }

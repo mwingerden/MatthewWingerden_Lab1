@@ -51,11 +51,11 @@ public class SearchMethods {
         System.out.println();
     }
 
-    public static void searchGrade(List<Student> list, boolean higLow) {
+    public static void searchGrade(List<Student> list, int grade, boolean higLow) {
         float value = 0;
         if(higLow) {
             for(Student student : list) {
-                if(value < student.getGpa()) {
+                if(student.getGrade() == grade && value < student.getGpa()) {
                     value = student.getGpa();
                 }
             }
@@ -63,14 +63,14 @@ public class SearchMethods {
         else {
             value = 10000;
             for(Student student : list) {
-                if(value > student.getGpa()) {
+                if(student.getGrade() == grade && value > student.getGpa()) {
                     value = student.getGpa();
                 }
             }
         }
 
         for(Student student : list) {
-            if(student.getGpa() == value) {
+            if(student.getGrade() == grade && student.getGpa() == value) {
                 System.out.println("Student: " + student.getStLastName() + ", " + student.getStFirstName()
                         + ", GPA: " + student.getGpa() + ", Teacher: " + student.gettLastName() + ", "
                         + student.gettFirstName() + ", Bus: " + student.getBus());
@@ -89,7 +89,7 @@ public class SearchMethods {
             }
         }
 
-        System.out.println("Grade: " + grade + ", Average GPA: " + total/count);
+        System.out.println("Grade: " + grade + ", Average GPA: " + total/count + "\n");
     }
 
     public static void totalGradeStudents(List<Student> list) {

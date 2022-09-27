@@ -23,7 +23,7 @@ public class Student {
     public String toString() {
         return "Student: " + this.stLastName + ", " + this.stFirstName + ", Grade: " + this.grade + ", Classroom: "
                 + this.classroom + ", Bus Route: " + this.bus + ", GPA: " + this.gpa + ", Teacher: " + this.tLastName
-                + " " + this.tFirstName;
+                + ", " + this.tFirstName;
     }
 
     public String getStLastName() {
