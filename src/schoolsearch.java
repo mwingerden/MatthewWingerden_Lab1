@@ -17,14 +17,16 @@ public class schoolsearch {
             inputList = new ArrayList<>(Arrays.asList(input.split(" ")));
 
             if(inputList.get(0).equals("")) {
-                System.out.println("Please print either of the following search queries: " +
-                        "\n•S[tudent]: <lastname> [B[us]]\n" +
-                        "•T[eacher] <lastname>\n" +
-                        "•B[us] <number>\n" +
-                        "•G[rade] <number> [H[igh]|L[ow]]\n" +
-                        "•A[verage] <number>\n" +
-                        "•I[nfo]\n" +
-                        "•Q[uit]\n");
+                System.out.println("""
+                        Please print either of the following search queries:\s
+                        •S[tudent]: <lastname> [B[us]]
+                        •T[eacher] <lastname>
+                        •B[us] <number>
+                        •G[rade] <number> [H[igh]|L[ow]]
+                        •A[verage] <number>
+                        •I[nfo]
+                        •Q[uit]
+                        """);
             }
             else if(inputList.get(0).equalsIgnoreCase("s") ||
 
@@ -46,18 +48,32 @@ public class schoolsearch {
                 if(inputList.size() == 2) {
                     SearchMethods.searchGrade(list.getListStudent(), Integer.parseInt(inputList.get(1)));
                 }
+                else if(inputList.size() == 3) {
+                    if(inputList.get(2).equalsIgnoreCase("h")
+                            || inputList.get(2).equalsIgnoreCase("high")) {
+                        SearchMethods.searchGrade(list.getListStudent(), true);
+                    }
+                    else if(inputList.get(2).equalsIgnoreCase("l")
+                            || inputList.get(2).equalsIgnoreCase("low")) {
+                        SearchMethods.searchGrade(list.getListStudent(), false);
+                    }
+                }
             }
             else if(inputList.get(0).equalsIgnoreCase("b") ||
                     inputList.get(0).equalsIgnoreCase("bus")) {
-
+                if(inputList.size() == 2) {
+                    SearchMethods.searchBus(list.getListStudent(), Integer.parseInt(inputList.get(1)));
+                }
             }
             else if(inputList.get(0).equalsIgnoreCase("a") ||
                     inputList.get(0).equalsIgnoreCase("average")) {
-
+                if(inputList.size() == 2) {
+                    SearchMethods.searchAverage(list.getListStudent(), Integer.parseInt(inputList.get(1)));
+                }
             }
             else if(inputList.get(0).equalsIgnoreCase("i") ||
                     inputList.get(0).equalsIgnoreCase("info")) {
-
+                SearchMethods.totalGradeStudents(list.getListStudent());
             }
         }while(!(input.equalsIgnoreCase("quit") || input.equalsIgnoreCase("q")));
 
