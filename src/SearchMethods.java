@@ -1,4 +1,4 @@
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -93,21 +93,28 @@ public class SearchMethods {
     }
 
     public static void totalGradeStudents(List<Student> list) {
-        Map<Integer, Integer> total = new HashMap<>();
+        Map<Integer, Integer> unsorted = new LinkedHashMap<>();
+        Map<Integer, Integer> sortedMap = new LinkedHashMap<>();
 
-        total.put(1, 0);
-        total.put(2, 0);
-        total.put(3, 0);
-        total.put(4, 0);
-        total.put(5, 0);
-        total.put(6, 0);
+        unsorted.put(1, 0);
+        unsorted.put(2, 0);
+        unsorted.put(3, 0);
+        unsorted.put(4, 0);
+        unsorted.put(5, 0);
+        unsorted.put(6, 0);
 
         for(Student student : list) {
-            total.put(student.getGrade(), total.get(student.getGrade()) + 1);
+            unsorted.put(student.getGrade(), unsorted.get(student.getGrade()) + 1);
         }
 
-        for(Map.Entry<Integer, Integer> entry : total.entrySet()) {
+        unsorted.entrySet()
+                .stream()
+                .sorted(Map.Entry.comparingByValue())
+                .forEachOrdered(x -> sortedMap.put(x.getKey(), x.getValue()));
+
+        for(Map.Entry<Integer, Integer> entry : sortedMap.entrySet()) {
             System.out.println(entry.getKey() + ":" + entry.getValue().toString());
         }
+        System.out.println();
     }
 }

@@ -29,7 +29,6 @@ public class schoolsearch {
                         """);
             }
             else if(inputList.get(0).equalsIgnoreCase("s") ||
-
                     inputList.get(0).equalsIgnoreCase("student")) {
                 if(inputList.size() >= 2 && inputList.size() <= 3) {
                     SearchMethods.searchStudent(list.getListStudent(), inputList.get(1),
