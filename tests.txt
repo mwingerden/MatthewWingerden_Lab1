@@ -184,3 +184,169 @@ Bus: 1
 // expected output: <empty line>
 
 B: 1
+
+// TC-22
+// Tests Requirements R3, R9
+// grade command, existing grade, high option
+// expected output: Student: GARTH, JOHN, GPA: 3.14, Teacher: FALKER, ADOLPH, Bus: 0
+
+Grade: 1 High
+
+// TC-23
+// Tests Requirements R3, R9
+// shorthand grade command, existing grade, high option
+// expected output: Student: GARTH, JOHN, GPA: 3.14, Teacher: FALKER, ADOLPH, Bus: 0
+
+G: 1 High
+
+// TC-24
+// Tests Requirements R3, R9
+// grade command, existing grade, shorthand high option
+// expected output: Student: GARTH, JOHN, GPA: 3.14, Teacher: FALKER, ADOLPH, Bus: 0
+
+Grade: 1 H
+
+// TC-25
+// Tests Requirements R3, R9
+// shorthand grade command, existing grade, shorthand high option
+// expected output: Student: GARTH, JOHN, GPA: 3.14, Teacher: FALKER, ADOLPH, Bus: 0
+
+G: 1 H
+
+// TC-26
+// Tests Requirements R3, R9
+// grade command, non-existing grade, high option
+// expected output: <empty line>
+
+Grade: 10 High
+
+// TC-27
+// Tests Requirements R3, R9
+// shorthand grade command, non-existing grade, shorthand high option
+// expected output: <empty line>
+
+G: 10 H
+
+// TC-28
+// Tests Requirements R3, R9
+// grade command, existing grade, low option
+Student: KOZOLA, BUSTER, GPA: 2.76, Teacher: HAMER, GAVIN, Bus: 55
+
+Grade: 2 Low
+
+// TC-29
+// Tests Requirements R3, R9
+// shorthand grade command, existing grade, low option
+Student: KOZOLA, BUSTER, GPA: 2.76, Teacher: HAMER, GAVIN, Bus: 55
+
+G: 2 Low
+
+// TC-30
+// Tests Requirements R3, R9
+// grade command, existing grade, shorthand low option
+Student: KOZOLA, BUSTER, GPA: 2.76, Teacher: HAMER, GAVIN, Bus: 55
+
+Grade: 2 L
+
+// TC-31
+// Tests Requirements R3, R9
+// shorthand grade command, existing grade, shorthand low option
+Student: KOZOLA, BUSTER, GPA: 2.76, Teacher: HAMER, GAVIN, Bus: 55
+
+G: 2 L
+
+// TC-32
+// Tests Requirements R3, R9
+// grade command, non-existing grade, low option
+// expected output: <empty line>
+
+Grade: 10 Low
+
+// TC-33
+// Tests Requirements R3, R9
+// shorthand grade command, non-existing grade, shorthand low option
+// expected output: <empty line>
+
+G: 10 L
+
+// TC-34
+// Tests Requirements R3, R10
+// average command, existing grade
+// expected output: Grade: 1, Average GPA: 2.995
+
+Average: 1
+
+// TC-35
+// Tests Requirements R3, R10
+// shorthand average command, existing grade
+// expected output: Grade: 1, Average GPA: 2.995
+
+A: 1
+
+// TC-36
+// Tests Requirements R3, R10
+// average command, non-existing grade
+// expected output: <empty line>
+
+Average: 10
+
+// TC-37
+// Tests Requirements R3, R10
+// shorthand average command, non-existing grade
+// expected output: <empty line>
+
+A: 10
+
+// TC-38
+// Tests Requirements R3, R11
+// info command
+// expected output: Grade 5: 0 Students
+//                  Grade 1: 2 Students
+//                  Grade 3: 9 Students
+//                  Grade 2: 13 Students
+//                  Grade 4: 15 Students
+//                  Grade 6: 21 Students
+
+Info
+
+// TC-39
+// Tests Requirements R3, R11
+// shorthand info command
+// expected output: Grade 5: 0 Students
+//                  Grade 1: 2 Students
+//                  Grade 3: 9 Students
+//                  Grade 2: 13 Students
+//                  Grade 4: 15 Students
+//                  Grade 6: 21 Students
+
+I
+
+// TC-40
+// Tests Requirements R3, R12
+// quit command
+// expected output: program terminates
+
+Quit
+
+// TC-40
+// Tests Requirements R3, R12
+// shorthand quit command
+// expected output: program terminates
+
+Q
+
+// TC-41
+// Tests Requirements E1
+// Anything that is not appropriate syntax regarding search queries
+// expected output: Please print either of the following search queries:
+//                  •S[tudent]: <lastname> [B[us]]
+//                  •T[eacher]: <lastname>
+//                  •B[us]: <number>
+//                  •G[rade]: <number> [H[igh]|L[ow]]
+//                  •A[verage]: <number>
+//                  •I[nfo]
+//                  •Q[uit]
+
+any input
+
+

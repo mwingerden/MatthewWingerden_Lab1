@@ -88,7 +88,10 @@ public class SearchMethods {
                 count++;
             }
         }
-
+        if(count == 0) {
+            System.out.println();
+            return;
+        }
         System.out.println("Grade: " + grade + ", Average GPA: " + total/count + "\n");
     }
 
@@ -113,7 +116,7 @@ public class SearchMethods {
                 .forEachOrdered(x -> sortedMap.put(x.getKey(), x.getValue()));
 
         for(Map.Entry<Integer, Integer> entry : sortedMap.entrySet()) {
-            System.out.println(entry.getKey() + ":" + entry.getValue().toString());
+            System.out.println("Grade " + entry.getKey() + ": " + entry.getValue().toString() + " Students");
         }
         System.out.println();
     }
