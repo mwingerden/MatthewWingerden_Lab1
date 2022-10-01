@@ -1,0 +1,198 @@
+Enter Search Query (hit enter to see options):
+Student: CORKER
+Student: CORKER, CARTER, Grade: 4, Classroom: 105, Bus Route: 53, GPA: 3.12, Teacher: HANTZ, JED
+
+Enter Search Query (hit enter to see options):
+S: ELHADDAD
+Student: ELHADDAD, SHANTE, Grade: 3, Classroom: 107, Bus Route: 52, GPA: 2.86, Teacher: FAFARD, ROCIO
+
+Enter Search Query (hit enter to see options):
+Student: COOKUS Bus
+Student: COOKUS, XUAN, Bus Route: 52
+
+Enter Search Query (hit enter to see options):
+Student: SCHOENECKER B
+Student: SCHOENECKER, PHUONG, Bus Route: 0
+
+Enter Search Query (hit enter to see options):
+S: COOKUS Bus
+Student: COOKUS, XUAN, Bus Route: 52
+
+Enter Search Query (hit enter to see options):
+S: SCHOENECKER B
+Student: SCHOENECKER, PHUONG, Bus Route: 0
+
+Enter Search Query (hit enter to see options):
+Student: NEMO
+
+Enter Search Query (hit enter to see options):
+S: NEMO
+
+Enter Search Query (hit enter to see options):
+Student: NEMO Bus
+
+Enter Search Query (hit enter to see options):
+S: NEMO B
+
+Enter Search Query (hit enter to see options):
+Teacher: FAFARD
+Student: COOKUS, XUAN
+Student: ELHADDAD, SHANTE
+Student: SWEDLUND, SHARRI
+Student: CIGANEK, MANIE
+Student: COVINGTON, TOMAS
+Student: EARLY, TORY
+Student: LINHART, LELA
+
+Enter Search Query (hit enter to see options):
+T: FAFARD
+Student: COOKUS, XUAN
+Student: ELHADDAD, SHANTE
+Student: SWEDLUND, SHARRI
+Student: CIGANEK, MANIE
+Student: COVINGTON, TOMAS
+Student: EARLY, TORY
+Student: LINHART, LELA
+
+Enter Search Query (hit enter to see options):
+Teacher: NEMO
+
+Enter Search Query (hit enter to see options):
+T: NEMO
+
+Enter Search Query (hit enter to see options):
+Grade: 1
+Student: SAELEE, DANILO
+Student: GARTH, JOHN
+
+Enter Search Query (hit enter to see options):
+G: 1
+Student: SAELEE, DANILO
+Student: GARTH, JOHN
+
+Enter Search Query (hit enter to see options):
+Grade: 10
+
+Enter Search Query (hit enter to see options):
+G: 10
+
+Enter Search Query (hit enter to see options):
+Bus: 53
+Student: CORKER, CARTER, Grade: 4, Class: 105
+Student: WORBINGTON, DEEDRA, Grade: 4, Class: 112
+Student: CIGANEK, MANIE, Grade: 3, Class: 107
+Student: SPANICEK, KENDRA, Grade: 4, Class: 112
+Student: CLECKLER, FLOY, Grade: 6, Class: 109
+Student: WICINSKY, TERESE, Grade: 2, Class: 108
+Student: LINHART, LELA, Grade: 3, Class: 107
+Student: DELUNA, KRYSTAL, Grade: 4, Class: 112
+Student: COMO, ZANDRA, Grade: 4, Class: 112
+
+Enter Search Query (hit enter to see options):
+B: 53
+Student: CORKER, CARTER, Grade: 4, Class: 105
+Student: WORBINGTON, DEEDRA, Grade: 4, Class: 112
+Student: CIGANEK, MANIE, Grade: 3, Class: 107
+Student: SPANICEK, KENDRA, Grade: 4, Class: 112
+Student: CLECKLER, FLOY, Grade: 6, Class: 109
+Student: WICINSKY, TERESE, Grade: 2, Class: 108
+Student: LINHART, LELA, Grade: 3, Class: 107
+Student: DELUNA, KRYSTAL, Grade: 4, Class: 112
+Student: COMO, ZANDRA, Grade: 4, Class: 112
+
+Enter Search Query (hit enter to see options):
+Bus: 1
+
+Enter Search Query (hit enter to see options):
+B: 1
+
+Enter Search Query (hit enter to see options):
+Grade: 1 High
+Student: GARTH, JOHN, GPA: 3.14, Teacher: FALKER, ADOLPH, Bus: 0
+
+Enter Search Query (hit enter to see options):
+G: 1 High
+Student: GARTH, JOHN, GPA: 3.14, Teacher: FALKER, ADOLPH, Bus: 0
+
+Enter Search Query (hit enter to see options):
+Grade: 1 H
+Student: GARTH, JOHN, GPA: 3.14, Teacher: FALKER, ADOLPH, Bus: 0
+
+Enter Search Query (hit enter to see options):
+G: 1 H
+Student: GARTH, JOHN, GPA: 3.14, Teacher: FALKER, ADOLPH, Bus: 0
+
+Enter Search Query (hit enter to see options):
+Grade: 10 High
+
+Enter Search Query (hit enter to see options):
+G: 10 H
+
+Enter Search Query (hit enter to see options):
+Grade: 2 Low
+Student: KOZOLA, BUSTER, GPA: 2.76, Teacher: HAMER, GAVIN, Bus: 55
+
+Enter Search Query (hit enter to see options):
+G: 2 Low
+Student: KOZOLA, BUSTER, GPA: 2.76, Teacher: HAMER, GAVIN, Bus: 55
+
+Enter Search Query (hit enter to see options):
+Grade: 2 L
+Student: KOZOLA, BUSTER, GPA: 2.76, Teacher: HAMER, GAVIN, Bus: 55
+
+Enter Search Query (hit enter to see options):
+G: 2 L
+Student: KOZOLA, BUSTER, GPA: 2.76, Teacher: HAMER, GAVIN, Bus: 55
+
+Enter Search Query (hit enter to see options):
+Grade: 10 Low
+
+Enter Search Query (hit enter to see options):
+G: 10 L
+
+Enter Search Query (hit enter to see options):
+Average: 1
+Grade: 1, Average GPA: 2.995
+
+Enter Search Query (hit enter to see options):
+A: 1
+Grade: 1, Average GPA: 2.995
+
+Enter Search Query (hit enter to see options):
+Average: 10
+
+Enter Search Query (hit enter to see options):
+A: 10
+
+Enter Search Query (hit enter to see options):
+Info
+Grade 5: 0 Students
+Grade 1: 2 Students
+Grade 3: 9 Students
+Grade 2: 13 Students
+Grade 4: 15 Students
+Grade 6: 21 Students
+
+Enter Search Query (hit enter to see options):
+I
+Grade 5: 0 Students
+Grade 1: 2 Students
+Grade 3: 9 Students
+Grade 2: 13 Students
+Grade 4: 15 Students
+Grade 6: 21 Students
+
+Enter Search Query (hit enter to see options):
+any input
+Please print either of the following search queries:
+S[tudent]: <lastname> [B[us]]
+T[eacher]: <lastname>
+B[us]: <number>
+G[rade]: <number> [H[igh]|L[ow]]
+A[verage]: <number>
+I[nfo]
+Q[uit]
+
+Enter Search Query (hit enter to see options):
+Quit
+Quitting
