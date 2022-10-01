@@ -1,3 +1,3 @@
 #!/bin/sh
 
-java schoolsearch
+java -cp ./out schoolsearchStudent: CORKER
