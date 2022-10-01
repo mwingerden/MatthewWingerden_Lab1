@@ -321,30 +321,23 @@ Info
 
 I
 
+// TC-41
+// Tests Requirements E1
+// Anything that is not appropriate syntax regarding search queries
+// expected output: Please print either of the following search queries:
+//                  S[tudent]: <lastname> [B[us]]
+//                  T[eacher]: <lastname>
+//                  B[us]: <number>
+//                  G[rade]: <number> [H[igh]|L[ow]]
+//                  A[verage]: <number>
+//                  I[nfo]
+//                  Q[uit]
+
+any input
+
 // TC-40
 // Tests Requirements R3, R12
 // quit command
 // expected output: program terminates
 
 Quit
-
-// TC-40
-// Tests Requirements R3, R12
-// shorthand quit command
-// expected output: program terminates
-
-Q
-
-// TC-41
-// Tests Requirements E1
-// Anything that is not appropriate syntax regarding search queries
-// expected output: Please print either of the following search queries:
-//                  •S[tudent]: <lastname> [B[us]]
-//                  •T[eacher]: <lastname>
-//                  •B[us]: <number>
-//                  •G[rade]: <number> [H[igh]|L[ow]]
-//                  •A[verage]: <number>
-//                  •I[nfo]
-//                  •Q[uit]
-
-any input
