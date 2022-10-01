@@ -6,7 +6,7 @@ public class SearchMethods {
     public static void searchStudent(List<Student> list, String lastName, boolean bus) {
         if(bus) {
             for(Student student : list) {
-                if(lastName.equalsIgnoreCase(student.getStLastName())) {
+                if(lastName.equals(student.getStLastName())) {
                     System.out.println("Student: " + student.getStLastName() + ", " + student.getStFirstName()
                             + ", Bus Route: " + student.getBus());
                 }
@@ -15,7 +15,7 @@ public class SearchMethods {
         }
         else {
             for(Student student : list) {
-                if(lastName.equalsIgnoreCase(student.getStLastName())) {
+                if(lastName.equals(student.getStLastName())) {
                     System.out.println(student);
                 }
             }
@@ -25,7 +25,7 @@ public class SearchMethods {
 
     public static void searchTeacher(List<Student> list, String lastName) {
         for(Student student : list) {
-            if(lastName.equalsIgnoreCase(student.gettLastName())) {
+            if(lastName.equals(student.gettLastName())) {
                 System.out.println("Student: " + student.getStLastName() + ", " + student.getStFirstName());
             }
         }

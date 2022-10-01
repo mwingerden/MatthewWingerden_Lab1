@@ -11,24 +11,12 @@ public class schoolsearch {
 
         do {
             Scanner scan = new Scanner(System.in);
-            System.out.println("Enter Search Query (enter nothing to see options): ");
+            System.out.println("Enter Search Query (hit enter to see options): ");
             input = scan.nextLine();
 
             inputList = new ArrayList<>(Arrays.asList(input.split(" ")));
 
             switch (inputList.get(0)) {
-                case "":
-                    System.out.println("""
-                            Please print either of the following search queries:\s
-                            •S[tudent]: <lastname> [B[us]]
-                            •T[eacher]: <lastname>
-                            •B[us]: <number>
-                            •G[rade]: <number> [H[igh]|L[ow]]
-                            •A[verage]: <number>
-                            •I[nfo]
-                            •Q[uit]
-                            """);
-                    break;
                 case "S:":
                 case "Student:":
                     if (inputList.size() >= 2 && inputList.size() <= 3) {
